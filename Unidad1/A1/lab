@@ -1,0 +1,24 @@
+Clase 1: Clasificacion de Señales
+    1. ¿Qué valores de fs y de duración usó, y por qué esos y no otros?
+
+	Segun la teoria, se debe cumplir el criterio teorico (Teorema de Nyquist-Shannon), donde la frecuencia de muestreo (fs) es 
+	estrictamente mayor al doble de la frecuencia de la señal, entonces:
+	
+	fs > 2Hz * 2 -> fs > 4 Hz (en nuestro caso), por defecto en el simulador su valor es 500 hz, por lo que cumple la cuota minima.
+	
+	Otro factor importante es el sobremuestreo, no es una norma o teorema pero se recomienda utilizar 10 veces el valor de la frecuencia
+	de la señal como frecuencia de muestreo, en ese caso: fs = 10 x 2 Hz -> fs = 20 Hz, como nuestro fs predeterminado en el simulador
+	es de 500 hz lo dejamos asi, dado que cumplimos sobradamente.
+
+ 	Es importante una aclaratoria, el teorema de Nyquist-Shannon puede saltarse en algunas circunstasncias como la señal rampa, 
+	donde para empezar la funcion no cuenta con una frecuencia.
+
+	Respecto a la duracion, se debe buscar que la señal complete un ciclo en el tiempo de muestreo, como en nuestro caso la señal rampa
+	simplemente crece hacia el infinito no es necesario decidir un tiempo especifico, pero si fuera periodica si.
+
+    2. ¿La rampa es señal de energía o de potencia en la ventana observada?
+	Es posible determinarla de varias maneras, sin embargo sucede que la señal rampa no pertenece a ninguno de estos dos conjuntos, debido
+	a que  tiene una duracion infinita y creciente sin limite.
+
+	debido a este comportamiento, tanto la Energia (E) como la Potencia (P) crecen al infinito, no estabilizandose en ningun valor, justificando
+	asi que la señal no pertenece a ninguna de las categorias.

@@ -1,0 +1,8 @@
+
+    Lanza la actividad: corre una senoidal, una exponencial decreciente y un pulso rectangular con la misma ventana de observación.
+
+    Anota E y P de cada corrida y compara P de la senoidal con A²/2.
+
+    Clasifica cada señal y justifica con el par (E, P), no con la figura.
+
+    Exporta el bundle ZIP de la actividad: trae las tres corridas juntas y el resumen_corridas.csv para la tabla del informe
