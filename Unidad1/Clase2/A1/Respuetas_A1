@@ -1,0 +1,23 @@
+Por qué el máximo aparece en (τ+t₀)/a y no en t₀?
+
+El máximo aparece en el instante t = (τ+t₀)/a pporque, por orden de operaciones, se debe factorizar la constante (a) 
+para revelar el corrimiento real, quedando la forma x(a(t-t₀/a)). Ahora si gualamos este nuevo argumento al instante del máximo original
+τ, tenemos  que a*t-t₀=τ. Al despejar el tiempo, nos  da exactamente t = (τ+t₀)/a, lo que demuestra que el corrimiento efectivo 
+es t₀/a y no t₀.
+
+Comprensión 
+  Parametros ---> a = 2.0 y desplazamiento (t₀) = 1.0
+El efecto temporar se veporque |a| > 1, la señal se comprime temporalmente a la mitad de su 
+duración original. El desplazamiento efectivo resultante es de 0.5 s hacia la derecha (t₀/a).
+Ademas se ve que la energía original de 1.0858 bajó a 0.5441. Esto verifica numéricamente la t
+eoría: al comprimir por a, la energía de la señal se divide exactamente por |a|.
+
+Variante reflejada
+  parametros ---> a = -1.0 y desplazamiento (t₀) = 1.0
+
+Efecto temporal: El factor negativo (a < 0) provoca la reflexión de la 
+señal, actuando como un espejo respecto del eje t=0
+Efecto sobre el retardo: La reflexión invierte la dirección del desplazamiento.
+El corrimiento efectivo pasa a ser 1.0 / -1.0 = -1.0, por lo que el parámetro
+t₀ que normalmente retarda la señal, se convierte visualmente en un adelanto de 1.0 s. 
+
